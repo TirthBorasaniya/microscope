@@ -1,0 +1,4 @@
+threshold: 0.1
+n_prompts: 1000
+batch_size: 32
+output_path: results/ioi_circuit.json

@@ -1,0 +1,13 @@
+model_name: "google/gemma-2-2b"
+hook_name: "blocks.18.hook_resid_post"
+d_in: 2304
+expansion_factor: 8
+activation_fn_name: topk
+top_k: 64
+train_batch_size_tokens: 4096
+n_training_tokens: 2000000000
+lr: 4.0e-4
+l1_coefficient: 0.0
+dataset_path: "Skylion007/openwebtext"
+output_dir: checkpoints/sae_trained
+o_use_random_model: false
